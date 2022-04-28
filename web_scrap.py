@@ -110,7 +110,7 @@ c=int(0)
 for n in lista_enlaces:
 	url_prod=lista_enlaces[c]
 	rr=ss.get(url_prod)
-	rr.html.render(timeout=20)
+	rr.html.render(timeout=50)
 	sopa=BeautifulSoup(rr.html.html,'html.parser')
 	c +=1
 
